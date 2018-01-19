@@ -1,0 +1,39 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    tools:context="cloud.thecode.finalproject.MapsActivity" />
+
+    <Button
+        android:id="@+id/get_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Random Location"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Places You've Visited"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/places_list_view"/>
+
+
+</LinearLayout>
